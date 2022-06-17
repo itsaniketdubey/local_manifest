@@ -6,26 +6,8 @@
          fetch="https://github.com/itsaniketdubey" />
  <remote name="PainKiller3" 
          fetch="https://github.com/PainKiller3" />
- <remote name="LineageOS" 
-         fetch="https://github.com/LineageOS" />
- <remote name="resist15" 
-         fetch="https://github.com/resist15" />
  <remote name="ArrowOS-Devices" 
          fetch="https://github.com/ArrowOS-Devices" />
- <remote name="ArrowOS" 
-         fetch="https://github.com/ArrowOS" />
- <remote name="varunhardgamer" 
-         fetch="https://gitlab.com/varunhardgamer" />
- <remote name="aex-tmp" 
-         fetch="https://github.com/aex-tmp" />
- <remote name="spark" 
-         fetch="https://github.com/Spark-Devices" />
-
- <!-- Removals 
- <remove-project name="hardware_qcom-caf_sdm845_media" /> -->
- <remove-project name="platform_build" />
- <remove-project name="android_vendor_qcom_opensource_vibrator" />
- <remove-project name="platform_system_sepolicy" />
 
  <!-- Trees -->
   
@@ -54,51 +36,5 @@
           name="android_hardware_xiaomi.git" 
           remote="ArrowOS-Devices"
           revision="arrow-12.0" />
- <!-- Vibrator HAL -->
- <project path="vendor/qcom/opensource/vibrator" 
-          name="android_vendor_qcom_opensource_vibrator.git" 
-          remote="ArrowOS"
-          revision="arrow-12.0" />
 
- <!-- HALS -->
-<project path="hardware/qcom-caf/sdm845/media" 
-          name="android_hardware_qcom_media.git" 
-          remote="LineageOS"
-          revision="lineage-19.0-caf-sdm845" />
-<project path="hardware/qcom-caf/sdm845/display" 
-          name="android_hardware_qcom_display.git" 
-          remote="LineageOS"
-          revision="lineage-19.0-caf-sdm845" />
-<project path="hardware/qcom-caf/sdm845/audio" 
-          name="android_hardware_qcom_audio.git" 
-          remote="LineageOS"
-          revision="lineage-19.0-caf-sdm845" />
-
- <!-- Toolchain -->
- <project path="prebuilts/clang/host/linux-x86/clang-custom" 
-          name="trb_clang" 
-          remote="varunhardgamer"
-          revision="14"
-          clone-depth="1" />
-          
- <!-- sepolicy -->
- <project path="system/sepolicy" 
-          name="platform_system_sepolicy" 
-          remote="sajidshahriar72543"
-          revision="12.0" />
-
- <!-- Custom platform_build -->
-  <project path="build/make" 
-           name="platform_build.git"
-           remote="sajidshahriar72543"
-           revision="12.0" >
-   <copyfile src="core/root.mk" dest="Makefile" />
-   <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-   <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-   <linkfile src="core" dest="build/core" />
-   <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-   <linkfile src="target" dest="build/target" />
-   <linkfile src="tools" dest="build/tools" />
- </project>
-        
 </manifest>

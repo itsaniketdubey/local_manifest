@@ -2,8 +2,8 @@
 <manifest>
 
   <!-- Remotes -->
- <remote name="itsaniketdubey" 
-         fetch="https://github.com/itsaniketdubey" />
+ <remote name="crdroidandroid" 
+         fetch="https://github.com/crdroidandroid" />
  <remote name="PainKiller3" 
          fetch="https://github.com/PainKiller3" />
  <remote name="ArrowOS-Devices" 
@@ -14,12 +14,12 @@
  <!-- Device Tree -->
  <project path="device/xiaomi/beryllium" 
           name="android_device_xiaomi_beryllium.git" 
-          remote="itsaniketdubey" 
+          remote="crdroidandroid" 
           revision="11.0" />
  <!-- Common Tree -->
  <project path="device/xiaomi/sdm845-common" 
           name="android_device_xiaomi_sdm845-common.git" 
-          remote="itsaniketdubey" 
+          remote="crdroidandroid" 
           revision="11.0" />
  <!-- Vendor Tree -->
  <project path="vendor/xiaomi" 
